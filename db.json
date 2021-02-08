@@ -1,0 +1,112 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "shirt",
+            "description": "Какое-то описание товара надетое на этом кадре, майка",
+            "price": 100,
+            "images": "1.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "title": "blond",
+            "description": "Какое-то описание товара надетое на этом кадре, это блондинка",
+            "price": 110,
+            "images": "2.png",
+            "views": 0,
+            "categoryId": 2
+        },
+        {
+            "id": 3,
+            "title": "tail",
+            "description": "Какое-то описание товара надетое на этом кадре, это чувак с хвостиком",
+            "price": 120,
+            "images": "3.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 4,
+            "title": "brunette",
+            "description": "Какое-то описание товара надетое на этом кадре, это брюнетка или шатенка, в общем х.з.",
+            "price": 130,
+            "images": "4.png",
+            "views": 0,
+            "categoryId": 2
+        },
+        {
+            "id": 5,
+            "title": "peroxid",
+            "description": "Какое-то описание товара надетое на этом кадре, это пироксидная",
+            "price": 140,
+            "images": "5.png",
+            "views": 0,
+            "categoryId": 2
+        },
+        {
+            "id": 6,
+            "title": "hat",
+            "description": "Какое-то описание товара надетое на этом кадре, чувак в шляпе",
+            "price": 150,
+            "images": "6.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 7,
+            "title": "pants",
+            "description": "Какое-то описание товара надетое на этом кадре, коротенькие штанишки",
+            "price": 160,
+            "images": "7.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 8,
+            "title": "shorts",
+            "description": "Какое-то описание товара надетое на этом кадре, шорты",
+            "price": 170,
+            "images": "8.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 9,
+            "title": "sad",
+            "description": "Какое-то описание товара надетое на этом кадре, грусный мальчик",
+            "price": 180,
+            "images": "9.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 10,
+            "title": "coat",
+            "description": "Какое-то описание товара надетое на этом кадре, пальтишко",
+            "price": 190,
+            "images": "10.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 11,
+            "title": "beard",
+            "description": "Какое-то описание товара надетое на этом кадре, бородатый мужик",
+            "price": 200,
+            "images": "11.png",
+            "views": 0,
+            "categoryId": 1
+        },
+        {
+            "id": 12,
+            "title": "bearded man",
+            "description": "Какое-то описание товара надетое на этом кадре, переодетый бородач",
+            "price": 210,
+            "images": "12.png",
+            "views": 0,
+            "categoryId": 1
+        }
+    ]
+}
