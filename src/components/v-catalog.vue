@@ -3,12 +3,15 @@
         <h1 class="v-catalog_h1">catalog</h1>
             <div class="v-catalog-box">
                 <v-catalog-item 
-                    v-for="product in PRODUCTS"
+                    v-for="product in paginateProducts"
                     :key="product.id"
                     :product_data="product"
                     @addToCart="addToCart">            
                 </v-catalog-item>
-            </div>    
+            </div> 
+            <button class="continueSopping"
+                @click="nextShow"
+            >show next products</button>   
     </div>
 </template>
 
@@ -21,23 +24,39 @@ export default {
     components: {
         vCatalogItem
     },
-    props: {},
+    props: {
+        products_data: {
+            type: Array,
+            default: () => {
+                return []
+            }
+        }
+    },
     data() {
         return {
-           
+           productsOnPage: 4,
+           pageNumber: 1
         }
     },
     computed: {
         ...mapGetters([
             'PRODUCTS',
             'CART'
-        ])
+        ]),
+        paginateProducts() {
+            let from = (this.pageNumber - 1) * this.productsOnPage;
+            let to = from + this.productsOnPage;
+            return this.PRODUCTS.slice(0, to);
+        }
     },
     methods: {
         ...mapActions ([
             'GET_PRODUCTS_FROM_API',
             'ADD_TO_CART'
         ]),
+        nextShow() {
+            this.pageNumber = this.pageNumber + 1;
+        },
         addToCart(data) {
             this.ADD_TO_CART(data);
         }
