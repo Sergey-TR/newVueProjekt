@@ -45,7 +45,10 @@
 					<div class="header__right_cart">
 						<div class="cart__total">
 						<span class="cart__total_span">{{cartTotalQty}}</span>
-							<button class="cart__total_btn"></button>
+							<!-- <button class="cart__total_btn"></button> -->
+							<router-link :to="{name: 'cart', params: {cart_data: CART}}" custom v-slot="{ navigate }" class="menu__list">
+                        		<span @click="navigate" @keypress.enter="navigate" role="link" class="menu__link"></span>
+                    		</router-link>
 						</div>				
 					</div>
 					<div class="my_account_btn">

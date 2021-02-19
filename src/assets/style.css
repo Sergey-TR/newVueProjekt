@@ -838,8 +838,23 @@
   
   .product__star {
     display: none;
+    color: #f16d7f;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .product__star:hover {
+    box-shadow: 0 0 5px rgb(128, 128, 128);
   }
   
+  .product__star:active {
+    box-shadow: none;
+  }
   .product__content {
     padding: 19px 13px;
   }
@@ -1050,36 +1065,85 @@
 
 .grand_total_checkout:hover {
   color: #f16d7f;
-  background-color: #ffffff;
+  background-color: #f0efef;
 }
-  .popup {
-    position: absolute;
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    display:none;
-    text-align:center;
+.v-popup-box {
+  padding: 16px;
+}
+.v-popup__header_navinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.v-popup__body {
+    display: flex;
   }
   
-  .popup_bg {
-    background:rgba(0,0,0,0.7);
-    position:absolute;
-    z-index:77777;
-    height:100%;
-    width:100%;
+.v-popup__header_title {
+    margin-bottom: 10px;
+    text-align: start;
+  }
+.v-popup__header {
+    margin-bottom: 16px;
   }
   
-  
-  .popup_img {
-    position: relative;
-    margin:0 auto;
-    z-index:88888;
-    max-height:94%;
-    max-width:94%;
-    margin:1% 0 0 0;
-  }
-
+.popup__img {
+     width: 300px;
+  } 
+.v-popup__description {
+  margin-left: 30px;
+  width: 321px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.v-popup-desc {
+  text-align: start;
+}
+.v-popup-price {
+  text-align: start;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #f16d7f;
+}
+.v-popup_add_btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  width: 100%;
+  font-size: 24px;
+  color: #f5f3f3;
+  background-color: #f16d7f;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.v-popup_add_btn:hover {
+  background-color: #f15b6f;
+}
+.v-popup_add_btn:active {
+  width: 98%;
+  background-color: #f16d7f;
+}
+.v-popup_close_btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  width: 50%;
+  font-size: 24px;
+  color: #f16d7f;
+  background-color: #f5f3f3;
+  cursor: pointer;
+}
+.v-popup_close_btn:hover {
+  color: #f5f3f3;
+  background-color: #f16d7f;
+}
+.v-popup_close_btn:active {
+  color: #f16d7f;
+  background-color: #f5f3f3;
+  width: 48%;
+}
 .promo {
   background-color: #e8e8e8;
 }
