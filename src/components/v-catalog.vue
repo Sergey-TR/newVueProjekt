@@ -24,14 +24,7 @@ export default {
     components: {
         vCatalogItem
     },
-    props: {
-        products_data: {
-            type: Array,
-            default: () => {
-                return []
-            }
-        }
-    },
+    props: {},
     data() {
         return {
            productsOnPage: 4,

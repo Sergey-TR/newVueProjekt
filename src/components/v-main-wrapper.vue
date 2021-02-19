@@ -73,8 +73,14 @@
                     <router-link to="/" custom v-slot="{ navigate }" class="menu__list">
                         <span @click="navigate" @keypress.enter="navigate" role="link" class="menu__link">home</span>
                     </router-link>
-					<li class="menu__list"><a href="#" class="menu__link">Man</a></li>
-					<li class="menu__list"><a href="#" class="menu__link">Women</a>
+					<!-- <li class="menu__list"><a href="#" class="menu__link">Man</a></li> -->
+					<router-link to="/man" custom v-slot="{ navigate }" class="menu__list">
+                        <span @click="navigate" @keypress.enter="navigate" role="link" class="menu__link">man</span>
+                    </router-link>
+					<router-link to="/women" custom v-slot="{ navigate }" class="menu__list">
+                        <span @click="navigate" @keypress.enter="navigate" role="link" class="menu__link">women</span>
+                    </router-link>
+					<!-- <li class="menu__list"><a href="#" class="menu__link">Women</a>
 					<div class="drop">
 						<div class="drop_women_left">
 							<h3 class="drop__h3">Women</h3>
@@ -126,7 +132,7 @@
 							</div>
 						</div>
 					</div>
-					</li> 
+					</li>  -->
                 	<router-link to="/catalog" custom v-slot="{ navigate }" class="menu__list">
                         <span @click="navigate" @keypress.enter="navigate" role="link" class="menu__link">catalog</span>
                     </router-link>
